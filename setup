@@ -1,0 +1,16 @@
+#! /bin/sh
+
+if [ $# -lt 1 ]; then
+	echo
+	echo "Usage: . setup [qseven-eng/qseven-user/udoo-eng/udoo-user]"
+	echo
+else
+	export ARCH=arm
+	export CROSS_COMPILE=$PWD/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
+	export PATH=$PWD/bootable/bootloader/uboot-imx/tools:$PATH
+	source build/envsetup.sh
+	lunch $1
+fi
+
+
+
