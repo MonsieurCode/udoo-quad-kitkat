@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/UDOO.Android/!svn/ver/65/4.4.2/device/fsl/udoo/Superuser/arm
+END
+chattr
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/UDOO.Android/!svn/ver/65/4.4.2/device/fsl/udoo/Superuser/arm/chattr
+END
+su
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/UDOO.Android/!svn/ver/65/4.4.2/device/fsl/udoo/Superuser/arm/su
+END

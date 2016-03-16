@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/UDOO.Android/!svn/ver/65/4.4.2/device/fsl/udoo/Superuser/common
+END
+Superuser.apk
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/UDOO.Android/!svn/ver/65/4.4.2/device/fsl/udoo/Superuser/common/Superuser.apk
+END
+install-recovery.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/UDOO.Android/!svn/ver/65/4.4.2/device/fsl/udoo/Superuser/common/install-recovery.sh
+END
+99SuperSUDaemon
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/UDOO.Android/!svn/ver/65/4.4.2/device/fsl/udoo/Superuser/common/99SuperSUDaemon
+END
