@@ -1,0 +1,53 @@
+Description: grep: fix infinite loop in -o
+ If the supplied pattern matches the empty string at the start of a line,
+ then 'grep -o' would loop forever.
+Author: Colin Watson <cjwatson@ubuntu.com>
+Bug-Ubuntu: https://bugs.launchpad.net/bugs/619817
+Forwarded: http://lists.busybox.net/pipermail/busybox/2010-August/073138.html
+Last-Update: 2010-08-19
+
+Index: b/findutils/grep.c
+===================================================================
+--- a/findutils/grep.c
++++ b/findutils/grep.c
+@@ -373,13 +373,19 @@
+ 					} else while (1) {
+ 						unsigned end = gl->matched_range.rm_eo;
+ 						char old = line[end];
+-						line[end] = '\0';
+-						print_line(line + gl->matched_range.rm_so,
+-								end - gl->matched_range.rm_so,
+-								linenum, ':');
+-						if (old == '\0')
+-							break;
+-						line[end] = old;
++						if (gl->matched_range.rm_so == gl->matched_range.rm_eo) {
++							end++;
++							if (line[end] == '\0')
++								break;
++						} else {
++							line[end] = '\0';
++							print_line(line + gl->matched_range.rm_so,
++									end - gl->matched_range.rm_so,
++									linenum, ':');
++							if (old == '\0')
++								break;
++							line[end] = old;
++						}
+ #if !ENABLE_EXTRA_COMPAT
+ 						if (regexec(&gl->compiled_regex, line + end,
+ 								1, &gl->matched_range, REG_NOTBOL) != 0)
+Index: b/testsuite/grep.tests
+===================================================================
+--- a/testsuite/grep.tests
++++ b/testsuite/grep.tests
+@@ -94,5 +94,9 @@
+ 	'grep -o "[^/]*$"' \
+ 	"test\n" \
+ 	"" "/var/test\n"
++testing "grep -o does not loop forever on zero-length match at ^" \
++	'grep -o "" | head -n1' \
++	"" \
++	"" "test\n"
+ 
+ exit $FAILCOUNT

@@ -1,0 +1,25 @@
+Index: b/include/applets.h
+===================================================================
+--- a/include/applets.h
++++ b/include/applets.h
+@@ -359,6 +359,7 @@
+ IF_SPLIT(APPLET(split, _BB_DIR_USR_BIN, _BB_SUID_DROP))
+ IF_START_STOP_DAEMON(APPLET_ODDNAME(start-stop-daemon, start_stop_daemon, _BB_DIR_SBIN, _BB_SUID_DROP, start_stop_daemon))
+ IF_STAT(APPLET(stat, _BB_DIR_BIN, _BB_SUID_DROP))
++IF_FEATURE_SH_STANDALONE(APPLET_ODDNAME(static-sh, ash, _BB_DIR_BIN, _BB_SUID_DROP, static_sh))
+ IF_STRINGS(APPLET(strings, _BB_DIR_USR_BIN, _BB_SUID_DROP))
+ IF_STTY(APPLET(stty, _BB_DIR_BIN, _BB_SUID_DROP))
+ IF_SU(APPLET(su, _BB_DIR_BIN, _BB_SUID_REQUIRE))
+Index: b/include/usage.h
+===================================================================
+--- a/include/usage.h
++++ b/include/usage.h
+@@ -123,6 +123,8 @@
+ #define lash_full_usage ""
+ #define msh_trivial_usage NOUSAGE_STR
+ #define msh_full_usage ""
++#define static_sh_trivial_usage NOUSAGE_STR
++#define static_sh_full_usage ""
+ 
+ #define awk_trivial_usage \
+        "[OPTIONS] [AWK_PROGRAM] [FILE]..."
