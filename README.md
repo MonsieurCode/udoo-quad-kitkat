@@ -1,6 +1,8 @@
 # udoo-quad-kitkat
 Udoo Quad KitKat Source (Incomplete)
 
+    sudo git clone git@github.com:MonsieurCode/MacOSX-SDKs.git /Developer/SDKs
+
 # Large File List
 frameworks/base/media/tests/contents/media_api/videoeditor/H264_BP_640x480_15fps_384kbps_60_0.mp4
 external/chromium-trace/trace-viewer/test_data/theverge_trace.json
