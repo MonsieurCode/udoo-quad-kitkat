@@ -3,7 +3,7 @@ Udoo Quad KitKat Source (Incomplete)
 
 # Missing Files
 
-These files were too large for GitHub to accept. Consider storing them in a publicly linked zip file on Google Drive, the adding then in on initialization.
+These files were too large for GitHub to accept. Consider storing them in a publicly linked zip file on Google Drive, the adding them in on initialization.
 
 frameworks/base/media/tests/contents/media_api/videoeditor/H264_BP_640x480_15fps_384kbps_60_0.mp4
 external/chromium-trace/trace-viewer/test_data/theverge_trace.json
