@@ -19,7 +19,7 @@ These files were too large for GitHub to accept. Consider storing them in a publ
 
 # Install Mac OS SDKs
 
-    sudo git clone git@github.com:MonsieurCode/MacOSX-SDKs.git /Developer/SDKs
+    sudo git clone git@github.com:phracker/MacOSX-SDKs.git /Developer/SDKs
 
 # References (ordered by date)
 1. ????/??/?? - [Setting Up a Mac OS X Build Environment](https://source.android.com/source/initializing.html#setting-up-a-mac-os-x-build-environment)
