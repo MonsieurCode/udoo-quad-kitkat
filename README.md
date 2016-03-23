@@ -39,6 +39,12 @@ https://support.apple.com/kb/DL1572?locale=en_US
     #java version "1.6.0_65"
     #Java(TM) SE Runtime Environment (build 1.6.0_65-b14-468-11M4833)
     #Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-468, mixed mode)
+    
+# Make Kernel
+
+    cd kernel_imx
+    make imx6_udoo_android_defconfig
+    make -j8 ARCH=arm CROSS_COMPILE=arm-eabi- HOSTCFLAGS="-I ../external/elfutils/libelf"
 
 # References (ordered by date)
 1. ????/??/?? - [Setting Up a Mac OS X Build Environment](https://source.android.com/source/initializing.html#setting-up-a-mac-os-x-build-environment)
