@@ -17,6 +17,10 @@ These files were too large for GitHub to accept. Consider storing them in a publ
 
     brew install jenv
 
+# Install Java 6
+
+https://support.apple.com/kb/DL1572?locale=en_US
+
 # Install Mac OS SDKs
 
     sudo git clone git@github.com:phracker/MacOSX-SDKs.git /Developer/SDKs
