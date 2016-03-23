@@ -13,21 +13,28 @@ These files were too large for GitHub to accept. Consider storing them in a publ
     prebuilts/eclipse/platform/org.eclipse.platform-3.7.2.zip
     prebuilts/qemu-kernel/x86/vmlinux-vbox
 
-# Install JEnv
+# Make Case Sensitive Disk Image
 
-    brew install jenv
-
-# Install Java 6
-
-https://support.apple.com/kb/DL1572?locale=en_US
+    hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 100g ~/Developer/GitHub/MonsieurCode/android.dmg -volname "Android"
 
 # Install Mac OS SDKs
 
     sudo git clone git@github.com:phracker/MacOSX-SDKs.git /Developer/SDKs
 
-# Make Case Sensitive Disk Image
+# Install Java 6
 
-    hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 100g ~/Developer/GitHub/MonsieurCode/android.dmg -volname "Android"
+https://support.apple.com/kb/DL1572?locale=en_US
+
+# Install JEnv
+
+    brew install jenv
+    jenv add /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+    cd /Volumes/Android/
+    jenv local oracle64-1.6.0.65
+    java -version
+    # java version "1.6.0_65"
+    # Java(TM) SE Runtime Environment (build 1.6.0_65-b14-468-11M4833)
+    # Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-468, mixed mode)
 
 # References (ordered by date)
 1. ????/??/?? - [Setting Up a Mac OS X Build Environment](https://source.android.com/source/initializing.html#setting-up-a-mac-os-x-build-environment)
