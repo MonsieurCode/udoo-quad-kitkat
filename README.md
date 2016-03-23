@@ -21,7 +21,9 @@ These files were too large for GitHub to accept. Consider storing them in a publ
 
     sudo git clone git@github.com:phracker/MacOSX-SDKs.git /Developer/SDKs
 
-#
+# Make Case Sensitive Disk Image
+
+    hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 100g ~/Developer/GitHub/MonsieurCode/android.dmg -volname "Android"
 
 # References (ordered by date)
 1. ????/??/?? - [Setting Up a Mac OS X Build Environment](https://source.android.com/source/initializing.html#setting-up-a-mac-os-x-build-environment)
