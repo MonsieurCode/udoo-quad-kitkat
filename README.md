@@ -29,9 +29,11 @@ https://support.apple.com/kb/DL1572?locale=en_US
 
     brew install jenv
     jenv add /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+
+# Set Local Java Version
+
     cd /Volumes/Android/
     jenv local oracle64-1.6.0.65
-    
 
 # Version Check
 
@@ -39,6 +41,10 @@ https://support.apple.com/kb/DL1572?locale=en_US
     #java version "1.6.0_65"
     #Java(TM) SE Runtime Environment (build 1.6.0_65-b14-468-11M4833)
     #Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-468, mixed mode)
+
+# Sync Repo
+
+    alias async="cd ~/Developer/GitHub/MonsieurCode/udoo-quad-kitkat-patch/ && git pull && rsync -a -P ~/Developer/GitHub/MonsieurCode/udoo-quad-kitkat-patch/ /Volumes/Android/udoo-quad-kitkat/ && cd /Volumes/Android/udoo-quad-kitkat
     
 # Make Kernel
 
