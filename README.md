@@ -42,6 +42,8 @@ https://support.apple.com/kb/DL1572?locale=en_US
 
 # References (ordered by date)
 1. ????/??/?? - [Setting Up a Mac OS X Build Environment](https://source.android.com/source/initializing.html#setting-up-a-mac-os-x-build-environment)
+2. 2015/11/20 - [Unable to build emulator-kk on OSX 10.11
+](https://bug623317.bugzilla.mozilla.org/show_bug.cgi?id=1228868)
 2. 2015/10/15 - [Build Android in OS X Yosemite Xcode 7](https://github.com/sjitech/build-android-in-OS-X-Yosemite-Xcode-7)
 3. 2015/01/16 - [Build Android 5.0 Lollipop on OSX 10.10 Yosemite](https://medium.com/@raminmahmoodi/build-android-5-0-lollipop-on-osx-10-10-yosemite-441bd00ee77a#.pqo9qtvsa)
 4. 2014/05/03 - [Setting Up an Android Build Environment on OS X 10.9 Mavericks](http://forum.xda-developers.com/showthread.php?t=2510898) 
