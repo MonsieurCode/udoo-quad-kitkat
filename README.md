@@ -23,7 +23,7 @@ Please refer Rock/Android_Build#Initializing_a_Build_Environment to set up the b
 
 Get the source code
 
-  Download here http://dl.radxa.com/rock2/source/radxa_rock2_square_android4.4.2_sdk.tar.xz
+  wget http://dl.radxa.com/rock2/source/radxa_rock2_square_android4.4.2_sdk.tar.xz
   
 Build u-boot
 
