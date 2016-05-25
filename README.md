@@ -43,6 +43,6 @@ Build android source code
     
 Generate the image
 
-   ./mkimage.sh ota
+    ./mkimage.sh ota
 
 you will get boot.img recovery.img system.img under rockdev/Image, and update.img ( e.g. rock2_android_kitkat_15-03-23_141904.img)under rockdev
