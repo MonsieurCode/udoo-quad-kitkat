@@ -6,6 +6,7 @@ Udoo Quad KitKat Source (Incomplete)
 
 These files were too large for GitHub to accept. Consider storing them in a publicly linked zip file on Google Drive, then adding them in on initialization.
 
+    device/lge/hammerhead-kernel/vmlinux.bz2
     external/chromium-trace/trace-viewer/test_data/theverge_trace.json
     external/eclipse-basebuilder/src/eclipse-sourceBuild-srcIncluded-3.6.2.zip
     frameworks/base/media/tests/contents/media_api/videoeditor/H264_BP_640x480_15fps_384kbps_60_0.mp4
