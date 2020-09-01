@@ -4,7 +4,7 @@ Udoo Quad KitKat Source (Incomplete)
 
 # Missing Files
 
-These files were too large for GitHub to accept. Consider storing them in a publicly linked zip file on Google Drive, then adding them in on initialization.
+These files were too large for GitHub to accept. Consider Git LFS or storing them in a publicly linked zip file on Google Drive, then adding them in on initialization.
 
     device/lge/hammerhead-kernel/vmlinux.bz2
     external/chromium-trace/trace-viewer/test_data/theverge_trace.json
